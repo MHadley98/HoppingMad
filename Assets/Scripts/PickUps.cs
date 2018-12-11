@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUps : MonoBehaviour {
+public class PickUps : MonoBehaviour
+{
+    public Rigidbody2D physicsBody;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
