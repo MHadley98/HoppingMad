@@ -199,6 +199,7 @@ GameObject:
   - component: {fileID: 141729340}
   - component: {fileID: 141729339}
   - component: {fileID: 141729338}
+  - component: {fileID: 141729341}
   m_Layer: 5
   m_Name: Play Button
   m_TagString: Untagged
@@ -263,7 +264,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 141729339}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 141729341}
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &141729339
@@ -300,6 +312,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 141729336}
   m_CullTransparentMesh: 0
+--- !u!114 &141729341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 141729336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346f8666460d0fc48bf62ecbfa06a0ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &186412196
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,6 +720,7 @@ GameObject:
   - component: {fileID: 1213149909}
   - component: {fileID: 1213149908}
   - component: {fileID: 1213149907}
+  - component: {fileID: 1213149910}
   m_Layer: 5
   m_Name: Leaderboard Button
   m_TagString: Untagged
@@ -761,7 +785,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1213149908}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1213149910}
+        m_MethodName: ToLeaderboard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1213149908
@@ -798,6 +833,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1213149905}
   m_CullTransparentMesh: 0
+--- !u!114 &1213149910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1213149905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0cd6c60c66f3b349b5c52283457eb72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1491454855
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,6 +930,7 @@ GameObject:
   - component: {fileID: 2077169841}
   - component: {fileID: 2077169840}
   - component: {fileID: 2077169839}
+  - component: {fileID: 2077169842}
   m_Layer: 5
   m_Name: How to Play Button
   m_TagString: Untagged
@@ -948,7 +995,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2077169840}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2077169842}
+        m_MethodName: ToHowToPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2077169840
@@ -985,3 +1043,14 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2077169837}
   m_CullTransparentMesh: 0
+--- !u!114 &2077169842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2077169837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bbea0314ab2642bd03250b4857b79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
