@@ -17,7 +17,6 @@ public class Lives : MonoBehaviour {
     private int numericalLives = 3;
 
 
-
     // Use this for initialization
     void Start () {
 
@@ -29,12 +28,6 @@ public class Lives : MonoBehaviour {
         livesText.text = numericalLives.ToString();
     }
 
-
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     public void LoseLife()
     {
