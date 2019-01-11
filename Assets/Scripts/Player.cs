@@ -52,6 +52,7 @@ public class Player : MonoBehaviour {
         {
             //if is game over load game over scene
             SceneManager.LoadScene("Game Over");
+            livesObject.ResetLives();
 
         }
         else

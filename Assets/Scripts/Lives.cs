@@ -38,12 +38,20 @@ public class Lives : MonoBehaviour {
 
     }
 
+   
     public void SaveLives()
     {
 
         PlayerPrefs.SetInt("lives", numericalLives);
 
     }
+
+    [ContextMenu("ResetLives")]
+    public void ResetLives()
+    {
+        PlayerPrefs.DeleteKey("lives");
+    }
+
 
     public bool IsGameOver()
     {

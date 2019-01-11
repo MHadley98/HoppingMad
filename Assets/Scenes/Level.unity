@@ -204,7 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   physicsBody: {fileID: 47827677}
   scoreObject: {fileID: 194121553}
-  pickupValue: 10
+  pickupValue: 100
 --- !u!50 &47827677
 Rigidbody2D:
   serializedVersion: 4
@@ -2426,7 +2426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   physicsBody: {fileID: 1675786885}
   scoreObject: {fileID: 194121553}
-  pickupValue: 20
+  pickupValue: 200
 --- !u!50 &1675786885
 Rigidbody2D:
   serializedVersion: 4

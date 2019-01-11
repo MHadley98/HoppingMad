@@ -33,7 +33,9 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        numericalScore = numericalScore + 1;
 
+        scoreText.text = numericalScore.ToString();
     }
 
     //function to increase the score
