@@ -14,6 +14,8 @@ public class Player : MonoBehaviour {
     //variable to keep a reference to the lives display object
     public Lives livesObject;
 
+    public Score scoreObject;
+
     // Use this for initialization
     void Start () {
 		
@@ -44,6 +46,8 @@ public class Player : MonoBehaviour {
         //Take away a life and save that change
         livesObject.LoseLife();
         livesObject.SaveLives();
+
+        scoreObject.SaveScore();
 
         //check if game over
         bool gameOver = livesObject.IsGameOver();

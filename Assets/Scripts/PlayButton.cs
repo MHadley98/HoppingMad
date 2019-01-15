@@ -15,6 +15,8 @@ public class PlayButton : MonoBehaviour
         //return to menu scene
         SceneManager.LoadScene("Level");
 
+        PlayerPrefs.DeleteKey("score");
+
     }
 
 }

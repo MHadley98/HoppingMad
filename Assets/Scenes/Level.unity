@@ -1951,6 +1951,7 @@ MonoBehaviour:
   physicsBody: {fileID: 1381773928}
   horizontalAxis: Horizontal
   livesObject: {fileID: 101510133}
+  scoreObject: {fileID: 194121553}
 --- !u!212 &1381773926
 SpriteRenderer:
   m_ObjectHideFlags: 0

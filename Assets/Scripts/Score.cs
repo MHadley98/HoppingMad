@@ -12,6 +12,8 @@ public class Score : MonoBehaviour
     //public to let us drag and drop in editor
     public Text scoreText;
 
+    public bool freezeScore = false;
+
     //variable to track numerical score
     //private so other scripts don't change it directly
     //Default to 0 when starting
@@ -33,9 +35,13 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        numericalScore = numericalScore + 1;
 
-        scoreText.text = numericalScore.ToString();
+        if (freezeScore == false)
+        {
+            numericalScore = numericalScore + 1;
+
+            scoreText.text = numericalScore.ToString();
+        }
     }
 
     //function to increase the score
