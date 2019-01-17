@@ -8,11 +8,9 @@ using UnityEngine.SceneManagement;
 
 public class MenuButton : MonoBehaviour
 {
-
-    //called when menu button is pressed
     public void ToMenu()
     {
-        //return to menu scene
+        //sends player to menu scene
         SceneManager.LoadScene("Menu");
 
     }

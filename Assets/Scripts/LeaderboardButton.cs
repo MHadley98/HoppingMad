@@ -8,11 +8,9 @@ using UnityEngine.SceneManagement;
 
 public class LeaderboardButton : MonoBehaviour
 {
-
-    //called when menu button is pressed
     public void ToLeaderboard()
     {
-        //return to menu scene
+        //sends player to leaderboard scene
         SceneManager.LoadScene("Leaderboard");
 
     }

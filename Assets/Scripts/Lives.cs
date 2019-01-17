@@ -29,6 +29,7 @@ public class Lives : MonoBehaviour {
     }
 
 
+    //updates both visual and numerical data when life is lost
     public void LoseLife()
     {
 
@@ -38,7 +39,7 @@ public class Lives : MonoBehaviour {
 
     }
 
-   
+   //saves currents lives to player prefs
     public void SaveLives()
     {
 
@@ -46,13 +47,14 @@ public class Lives : MonoBehaviour {
 
     }
 
+    //deletes data from player prefs so default value is used when new game is started
     [ContextMenu("ResetLives")]
     public void ResetLives()
     {
         PlayerPrefs.DeleteKey("lives");
     }
 
-
+    //checks to see if player has run out of lives
     public bool IsGameOver()
     {
         if (numericalLives <= 0)

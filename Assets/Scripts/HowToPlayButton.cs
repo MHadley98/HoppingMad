@@ -8,11 +8,9 @@ using UnityEngine.SceneManagement;
 
 public class HowToPlayButton : MonoBehaviour
 {
-
-    //called when menu button is pressed
     public void ToHowToPlay()
     {
-        //return to menu scene
+        //sends player to thr how to play scene
         SceneManager.LoadScene("HowToPlay");
 
     }

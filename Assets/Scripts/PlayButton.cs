@@ -8,13 +8,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayButton : MonoBehaviour
 {
-
-    //called when menu button is pressed
     public void StartGame()
     {
-        //return to menu scene
+        //sends player to game scene
         SceneManager.LoadScene("Level");
 
+        //clears score from previous game when button is pressed
         PlayerPrefs.DeleteKey("score");
 
     }

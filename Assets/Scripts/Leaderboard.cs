@@ -38,7 +38,7 @@ public class Leaderboard : MonoBehaviour {
 
         }
 
-        //update th evisual display
+        //update the visual display
         UpdateVisualDisplay();
     }
 

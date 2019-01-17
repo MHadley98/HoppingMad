@@ -12,6 +12,7 @@ public class Score : MonoBehaviour
     //public to let us drag and drop in editor
     public Text scoreText;
 
+    //freezes score when being taken to the game over screen
     public bool freezeScore = false;
 
     //variable to track numerical score
@@ -36,6 +37,7 @@ public class Score : MonoBehaviour
     void Update()
     {
 
+        //adds 1 to the score every frame during game time
         if (freezeScore == false)
         {
             numericalScore = numericalScore + 1;

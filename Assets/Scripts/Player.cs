@@ -14,6 +14,7 @@ public class Player : MonoBehaviour {
     //variable to keep a reference to the lives display object
     public Lives livesObject;
 
+    //variable to keep a reference to the score display object
     public Score scoreObject;
 
     // Use this for initialization
@@ -47,6 +48,7 @@ public class Player : MonoBehaviour {
         livesObject.LoseLife();
         livesObject.SaveLives();
 
+        //save the score after losing a life
         scoreObject.SaveScore();
 
         //check if game over
@@ -56,20 +58,19 @@ public class Player : MonoBehaviour {
         {
             //if is game over load game over scene
             SceneManager.LoadScene("Game Over");
+
+            //resets lives after game over state is reached
             livesObject.ResetLives();
 
         }
         else
         {
-            //if not game over reset current level from start
-
-            //reset the current level to restart from beginning
-
-            //forst ask unity what the current level is
+            //resets all objects back to the top of the screen by restarting the level
+           
+            //ask unity what the current level is
             Scene currentLevel = SceneManager.GetActiveScene();
 
-            //second tell Unity to load current level again
-            //by passing the build index of our level
+            //loads level again by passing the build index of our level
             SceneManager.LoadScene(currentLevel.buildIndex);
         }
 
